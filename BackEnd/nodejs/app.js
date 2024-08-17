@@ -30,8 +30,8 @@ connection.connect((err) => {
 
 // AWS S3 설정
 const s3 = new AWS.S3({
-  accessKeyId: 'AKIATCKASPM57Y7CUNR6', // AWS IAM 사용자 액세스 키
-  secretAccessKey: 'qCMKpzFRDZOZCfymKQeeb9MZ8RGlnVyGfLAB9p0I', // AWS IAM 사용자 비밀 액세스 키
+  accessKeyId: '', // AWS IAM 사용자 액세스 키
+  secretAccessKey: '', // AWS IAM 사용자 비밀 액세스 키
   region: 'ap-northeast-2', // S3 버킷이 위치한 리전
 });
 
