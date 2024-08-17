@@ -67,8 +67,7 @@ app.post('/getData/upload', upload.single('image'), (req, res) => {
     Bucket: s3Bucket,
     Key: `${Date.now()}_${path.basename(file.originalname)}`, // 파일명에 타임스탬프 추가
     Body: file.buffer,
-    ContentType: file.mimetype,
-    ACL: 'public-read', // 공개 접근 설정 (선택 사항)
+    ContentType: file.mimetype
   };
 
   // S3에 파일 업로드
